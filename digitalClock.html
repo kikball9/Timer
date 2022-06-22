@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+        <title>Digital Clock</title>
+        <link rel="stylesheet" type="text/css" href="digitalClock.css">
+
+  </head>
+  <body>
+
+    <div id="clock" class="clock">
+      <h1>CLOCK</h1>
+      <div id="hours-tens"></div>
+      <div id="hours-units"></div>
+      <div id="colon" class="colon off">:</div>
+      <div id="minutes-tens"></div>
+      <div id="minutes-units"></div>
+      <div id="colon2" class="colon off">:</div>
+      <div id="second-tens"></div>
+      <div id="second-units"></div>
+      <div></div>
+    </div>
+
+    <!-- TIMER -->
+    <div id="timer" class="clock">
+      <h1>TIMER</h1>
+      <div id="minutes1"></div>
+      <div id="minutes2"></div>
+      <div id="colon3" class="colon off">:</div>
+      <div id="sec1"></div>
+      <div id="sec2"></div>
+      <div id="colon4" class="colon off">:</div>
+      <div id="milli1"></div>
+      <div id="milli2"></div>
+
+      
+    </div>
+
+    <div id="button" class="button"> 
+      <button id="start" onclick="timer(),buttonStatus()" >start</button>
+      <button id="reset" onclick="reset(),buttonStatus()" disabled>clean</button>
+    </div>
+  
+
+    <script src="digitalClock.js"></script>
+  </body>
+</html>
